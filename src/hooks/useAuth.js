@@ -13,16 +13,16 @@ const useAuth = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        ( () => {
+        const updater = () => {
             setIsAuth(localStorage.getItem('token') !== null);
             setUser(JSON.parse(localStorage.getItem('user')));
-        } )();
+        }
+        updater();
         return () => { };
     }, []);
 
     const authReq = async (form) => {
         try {
-            setLoading(true);
             const response = await auth(form);
             localStorage.setItem('user', JSON.stringify(response.data.data));
             localStorage.setItem('token', JSON.stringify(response.data.token));
