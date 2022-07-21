@@ -17,7 +17,7 @@ const HomePage = () => {
             <div className='mt-20'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className='text-lg font-semibold mb-4'>Next.js boilerplate</h1>
-                        <h1>👋🏻 Welcome { user?.user }</h1>
+                    <h2>👋🏻 Welcome { user?.user }</h2>
                 </div>
             </div>
         </>
