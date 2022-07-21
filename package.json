@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -19,6 +20,7 @@
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^10.4.7",
+    "cypress": "^10.3.1",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2",
     "postcss": "^8.4.14",
