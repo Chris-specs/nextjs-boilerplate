@@ -3,7 +3,7 @@ import { SiNextdotjs } from "react-icons/si";
 const Header = () => {
     return (
         <>
-            <nav className="p-4">
+            <nav className="navbar flex justify-center lg:justify-start p-4">
                 <div className="flex items-center gap-2">
                     <SiNextdotjs className="text-4xl" />
                     <span>Boilerplate</span>
